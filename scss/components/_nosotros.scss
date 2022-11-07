@@ -1,0 +1,37 @@
+@import '../components/footer';
+@import '../components/header';
+@import '../base/estilosgenerales';
+@import '../base/listas';
+
+
+.titulos {
+    font-size: nth($font-size , 6 );
+    color: nth($colores,1 );
+    text-align: center;
+    padding: 3cm;
+}
+
+.tituloSecundario {
+    color: nth($colores,4 );
+    font-size: nth($font-size , 7 );
+    padding-left: 1cm;
+
+}
+
+.texto {
+    color:nth($colores,1 );
+    font-size: nth($font-size , 7 );
+    text-align: center;
+}
+
+.texto2 {
+    color: nth($colores,1 );
+    font-size: nth($font-size , 7 );
+    text-align: start;
+}
+
+.formulario {
+    color: nth($colores,10 );
+    font-size: nth($font-size , 3 );
+    padding-left: 1cm
+}

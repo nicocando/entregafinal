@@ -1,0 +1,24 @@
+
+@import '../components/footer';
+@import '../components/header';
+@import '../base/estilosgenerales';
+@import '../base/listas';
+
+.tituloSucursales {
+    font-size: nth($font-size , 8 );
+    color: nth($colores,1 );
+    text-align: center;
+}
+
+#listaSucursales {
+    display: block;
+    align-self: center;
+}
+
+
+
+#lista.listaSucursales .texto {
+    font-size: nth($font-size , 4 );
+    color: nth($colores,1 );
+    
+}

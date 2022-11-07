@@ -1,0 +1,88 @@
+
+@import '../base/estilosgenerales';
+@import '../base/listas';
+@import '../components/footer';
+@import '../components/header';
+
+.menutitulo {
+    font-size: nth($font-size , 4 );
+    color:nth($colores,1 );
+    text-align: center;
+}
+
+.galerycontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding-left: 5cm;
+    padding-top: 1cm;
+    gap: 15px;
+}
+
+
+.galery-title {
+    color: nth($colores,4 );
+    font-size: nth($font-size , 3 );
+    height: 20px;
+    width: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+
+}
+
+.precio {
+    color:nth($colores,4 );
+    padding-left: 2cm;
+
+}
+
+
+
+.titulos {
+    font-size: nth($font-size , 1 );
+    color: nth($colores,1 );
+    text-align: start;
+    font-family: initial;
+}
+
+.imagen {
+    height: 150px;
+    width: 180px;
+    padding: 5px;
+}
+
+.caja {
+    padding-top: 1cm;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionFinger {
+    color: nth($colores,4 );
+    width: 400px;
+    height: 100px;
+    font-size: nth($font-size , 5 );
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1cm;
+
+}
+
+.imageFinger {
+    padding-top: 0cm;
+    padding-left: 7cm;
+    text-align: center;
+}
+
+.galery-title1 {
+    padding-left: 2cm;
+    padding-bottom: 0cm;
+    text-align: center;
+    height: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}

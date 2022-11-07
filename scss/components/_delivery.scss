@@ -1,0 +1,45 @@
+@import '../components/footer';
+@import '../components/header';
+@import '../base/estilosgenerales';
+@import '../base/listas';
+
+.titulos {
+    font-size: nth($font-size, 9) ;
+    color: nth($colores,1 );
+    text-align: center;
+}
+
+.tituloDelivery {
+    font-size: nth($font-size , 6 );
+    color: nth($colores,1 );
+    text-align: start;
+
+
+}
+
+.imagen {
+    height: 280px;
+    width: 280px;
+    padding: 5px;
+}
+
+#pedidos .contenedor a {
+    width: 200px;
+    color:nth($colores,1 );
+    border: 3px solid nth($colores,6 );
+    background-color: nth($colores,7 );
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 30px;
+    margin: 3cm;
+
+}
+.texto2 {
+    color: nth($colores,1 );
+    font-size:  nth($font-size , 7 );
+    text-align: start;
+}
+
+
+/*version mobile*/

@@ -1,0 +1,510 @@
+
+
+@import '../base/estilosgenerales';
+@import '../base/listas';
+@import '../components/footer';
+@import '../components/header';
+
+
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#image-scroll {
+    margin-top: 80px;
+    position: relative;
+
+}
+
+#image-scroll img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#image-scroll .contenedor {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: nth($colores,4 );
+}
+
+#image-scroll a {
+    display: block;
+    width: 100px;
+    color: nth($colores,1 );
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid nth($colores,6 );
+    text-align: center;
+    background-color: nth($colores,7 );
+
+}
+
+#image-scroll a:hover {
+    background:nth($colores,8 );
+}
+
+#Sucursales {
+    color: nth($colores,1 );
+    font-size: nth($font-size , 1 );
+    text-align: center;
+}
+
+.listaSucursales {
+
+    color: nth($colores,1 );
+    font-size: nth($font-size , 1 );
+    padding: 30px;
+    margin-left: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Sucursales .contenedor a {
+    display: block;
+    width: 300px;
+    color: nth($colores,1 );
+    text-decoration: none;
+    border: 3px solid nth($colores,6 );
+    text-align: center;
+    background-color: nth($colores,7 );
+}
+
+li {
+    border: 1px nth($colores,1 ) solid;
+    padding: 15px;
+}
+
+
+
+.video {
+    color: nth($colores,9 );
+    height: 450px;
+    width: 100%;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block
+}
+.texto {
+    color: nth($colores,1 );
+    padding: left 10px;
+    font-size: nth($font-size , 3 );
+    font-style: italic;
+}
+
+
+.imagen {
+    padding-bottom: 2cm;
+    width: 15px;
+    height: 15px;
+    display: inline-block
+}
+
+
+.icono {
+    width: 60px;
+    height: 60px;
+    display: inline-block
+}
+
+/*version mobile*/
+
+@media only screen and (max-width:450px) {
+    .header {
+        width: 100%;
+        height: 20px;
+        background-color: nth($colores,7 );
+        color: nth($colores,1 );
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    
+    }
+    
+    .contenedor {
+        width: 98%;
+        margin: auto;
+    }
+    
+    #title-icon {
+        float: left;
+        color: nth($colores,1 );
+        font-size: nth($font-size , 5 );
+        font-family: 'Syne Tactile', cursive;
+        padding-left: 10%;
+        padding-top: 0%;
+    }
+    
+    #title-icon .icono {
+        width: 1cm;
+        height: 1cm;
+    }
+    
+    /* menu- bar*/
+    #menu-bar {
+        display: none;
+    
+    }
+    
+    header label {
+        float: right;
+        font-size: nth($font-size , 3 );
+        margin: 6px 0;
+        cursor: pointer;
+    
+    }
+    
+    .menu {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: nth($colores,2 );
+        transition: all 0.5s;
+        transform: translateX(-100%);
+    
+    }
+    
+    .menu a {
+        display: block;
+        color: nth($colores,4 );
+        height: 30px;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom: 1px solid nth($colores,3 );
+    }
+    
+    .menu a:hover {
+        background: nth($colores,5 );
+    }
+    
+    #menu-bar:checked~.menu {
+        transform: translateX(0%);
+    }
+    
+    header .contenedor {
+        display: table;
+    }
+    
+    /* imagen scroll link nosotros */
+    section {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #image-scroll {
+        margin-top: 20px;
+        position: relative;
+    
+    }
+    
+    #image-scroll img {
+        width: 100%;
+        height: 70%;
+    
+    }
+    
+    #image-scroll .contenedor {
+        display:block;
+        position: absolute;
+        top: 80%;
+    
+        color: nth($colores,4 );
+    }
+    
+    #image-scroll a {
+        display: block;
+        width: 30%;
+        color:nth($colores,1 );
+        text-decoration: none;
+        padding: 3px;
+        margin-top: 3px;
+        border: 1px solid nth($colores,6 );
+        text-align: center;
+        background-color: nth($colores,7 );
+    
+    }
+    
+    #image-scroll a:hover {
+        background: nth($colores,8 );
+    }
+    
+    #Sucursales {
+        color: nth($colores,1 );
+        font-size:  nth($font-size , 5 );
+        text-align: center;
+    }
+    
+    .listaSucursales {
+    
+        color:nth($colores,1 );
+        font-size:  nth($font-size , 5 );
+        padding: 10px;
+        margin-left: 10px;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+       
+    }
+    
+    #Sucursales .contenedor a {
+        display: block;
+        width: 180px;
+        color: nth($colores,1 );
+        text-decoration: none;
+        border: 3px solid nth($colores,6 );
+        text-align: center;
+        background-color: nth($colores,7 );
+    }
+    
+    li {
+        border: 1px nth($colores,1 ) solid;
+        padding: 5px;
+    }
+    
+    
+    
+    .video {
+        color: nth($colores,9 );
+        height: 50%;
+        width: 100%;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block
+    }
+    
+    .footer {
+        background-color: nth($colores,10 );
+        color: nth($colores,9 );
+        margin: 0%;
+        padding-left: 5px;
+        border: double nth($colores,1 ) 3px;
+        display: inline-flexbox;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .texto {
+        color: nth($colores,1 );
+        padding: left 10px;
+        font-size:  nth($font-size , 5 );
+        font-style: italic;
+    }
+    
+    
+    
+    
+    .icono {
+        width: 20px;
+        height: 20px;
+        display: inline-block
+    }
+}
+
+/* version tablet*/
+@media only screen and (min-width:450px) and (max-width:960px) {
+    .header {
+        width: 100%;
+        height: 40px;
+        background-color:nth($colores,7 );
+        color:nth($colores,1 );
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    
+    }
+    
+    .contenedor {
+        width: 98%;
+        margin: auto;
+    }
+    
+    #title-icon {
+        float: left;
+        color: nth($colores,1 );
+        font-size:  nth($font-size , 3 );
+        font-family: 'Syne Tactile', cursive;
+        padding-left: 10%;
+        padding-top: 0%;
+    }
+    
+    #title-icon .icono {
+        width: 1.5cm;
+        height: 1.5cm;
+    }
+    
+    /* menu- bar*/
+    #menu-bar {
+        display: none;
+    
+    }
+    
+    header label {
+        float: right;
+        font-size:  nth($font-size , 7 );
+        margin: 6px 0;
+        cursor: pointer;
+    
+    }
+    
+    .menu {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: nth($colores,2 );
+        transition: all 0.5s;
+        transform: translateX(-100%);
+    
+    }
+    
+    .menu a {
+        display: block;
+        color: nth($colores,4 );
+        height: 30px;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom: 1px solid nth($colores,3 );
+    }
+    
+    .menu a:hover {
+        background: nth($colores,5 );
+    }
+    
+    #menu-bar:checked~.menu {
+        transform: translateX(0%);
+    }
+    
+    header .contenedor {
+        display: table;
+    }
+    
+    /* imagen scroll link nosotros */
+    section {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #image-scroll {
+        margin-top: 40px;
+        position: relative;
+    
+    }
+    
+    #image-scroll img {
+        width: 100%;
+        height: 70%;
+    
+    }
+    
+    #image-scroll .contenedor {
+        
+        position: absolute;
+        top: 80%;
+        justify-content: center;
+       
+        color:nth($colores,4 );
+    }
+    
+    #image-scroll a {
+        display: block;
+        width: 30%;
+        color:nth($colores,1 );
+        text-decoration: none;
+        padding: 3px;
+        margin-top: 3px;
+        border: 1px solid nth($colores,6 );
+        text-align: center;
+        background-color: nth($colores,7 );
+    
+    }
+    
+    #image-scroll a:hover {
+        background: nth($colores,8 );
+    }
+    
+    #Sucursales {
+        color: nth($colores,1 );
+        font-size:  nth($font-size , 3 );
+        text-align: center;
+    }
+    
+    .listaSucursales {
+    
+        color: nth($colores,1 );
+        font-size:  nth($font-size , 3 );
+        padding: 10px;
+        margin-left: 10px;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+       
+    }
+    
+    #Sucursales .contenedor a {
+        display: block;
+        width: 200px;
+        color: nth($colores,1 );
+        text-decoration: none;
+        border: 3px solid nth($colores,6 );
+        text-align: center;
+        background-color: nth($colores,7 );
+    }
+    
+    li {
+        border: 1px nth($colores,1 ) solid;
+        padding: 5px;
+    }
+    
+    
+    
+    .video {
+        color: nth($colores,9 );
+        height: 50%;
+        width: 100%;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block
+    }
+    
+    .footer {
+        background-color: nth($colores,10 );
+        color:nth($colores,9 );
+        margin: 0%;
+        padding-left: 5px;
+        border: double nth($colores,1 ) 3px;
+        display: inline-flexbox;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .texto {
+        color: nth($colores,1 );
+        padding: left 10px;
+        font-size: nth($font-size , 3 );
+        font-style: italic;
+    }
+    
+    
+    
+    
+    .icono {
+        width: 30px;
+        height: 30px;
+        display: inline-block
+    }
+}

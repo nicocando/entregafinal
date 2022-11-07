@@ -1,0 +1,89 @@
+
+@import '../base/estilosgenerales';
+@import '../base/listas';
+
+.body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/437/426/non_2x/dark-and-black-grunge-and-texture-cement-or-concreate-background-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: nth($colores , 7 );
+    color: nth($colores,1 );
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; 
+
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+#title-icon {
+    float: left;
+    color: nth($colores,1 );
+    font-size:  nth($font-size , 1 );
+    font-family: 'Syne Tactile', cursive;
+    padding-left: 1cm;
+    padding-top: 0%;
+}
+
+#title-icon .icono {
+    width: 2cm;
+    height: 2cm;
+}
+
+/* menu- bar*/
+#menu-bar {
+    display: none;
+
+}
+
+header label {
+    float: right;
+    font-size:  nth($font-size , 2 );
+    margin: 6px 0;
+    cursor: pointer;
+
+}
+
+.menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: nth($colores,2 );
+    transition: all 0.5s;
+    transform: translateX(-100%);
+
+}
+
+.menu a {
+    display: block;
+    color: nth($colores,4 );
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid nth($colores,3 );
+}
+
+.menu a:hover {
+    background:nth($colores,5 );
+}
+
+#menu-bar:checked~.menu {
+    transform: translateX(0%);
+}
+
+header .contenedor {
+    display: table;
+}

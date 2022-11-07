@@ -1,0 +1,26 @@
+<h2 class="titulos"> Finger Food </h2>
+
+        <div class="sectionFinger"> 
+            
+            <div>
+                <h3 class="galery-title1"> PAPAS </h2>
+                <img class="imageFinger"><img class="imagen" src="../imagenes/PAPAS.jfif" alt="hamburgesas">
+                <p style="font-size: 15px" ;>$500</p>
+            </div>
+            <div>
+                <h3 class="galery-title1"> CHIKEN FINGER </h2>
+                <img class="imageFinger"> <img class="imagen" src="../imagenes/CHICKEN.jfif" alt="hamburgesas">
+                <p style="font-size: 15px;">$700</p>
+            </div>
+            <div>
+                <h3 class="galery-title1"> MUZARELLITAS </h2>
+                <img class="imageFinger"><img class="imagen" src="../imagenes/MUZZA.jfif" alt="hamburgesas">
+                <p style="font-size: 15px; ">$700</p>
+            </div>
+            <div>
+                <h3 class="galery-title1"> AROS </h2>
+                <img class="imageFinger"><img class="imagen" src="../imagenes/AROS.jfif" alt="hamburgesas">
+                <p style="font-size: 15px; ">$600</p>
+            </div>
+
+        </div>

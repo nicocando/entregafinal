@@ -1,0 +1,15 @@
+
+@import '../base/estilosgenerales';
+@import '../base/listas';
+
+
+.footer {
+    background-color:nth($colores,10 );
+    color: nth($colores,9 );
+    margin: 0%;
+    padding-left: 5px;
+    border: double nth($colores,1 ) 3px;
+    display: inline-flexbox;
+    position: relative;
+    bottom: 0;
+}
